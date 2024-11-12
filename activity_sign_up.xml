@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/confirmPasswordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/userTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login ->"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center" />
+
+</LinearLayout>
