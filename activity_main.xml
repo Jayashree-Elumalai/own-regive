@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="0dp">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="75dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/app_logo_desc"
+        android:src="@drawable/regive" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/appLogo"
+        android:text="ReGive"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="120dp"
+        android:text="User"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Logout"
+        android:textSize="10sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutButton"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/donateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="Donate" />
+
+        <Button
+            android:id="@+id/donationsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="Donation" />
+
+        <!-- Requests Button -->
+        <Button
+            android:id="@+id/requestsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="Request" />
+
+        <!-- History Button -->
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="History" />
+
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="120dp"
+        android:layout_marginRight="10dp"
+        android:text="Save" />
+
+    <!-- Name Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Name:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appLogo"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="60dp"
+        android:hint="Enter your name" />
+
+    <!-- Contact Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Contact:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/contactInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameInput"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter your contact" />
+
+    <!-- Category Selection -->
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Category:"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactInput"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clothesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="30dp"
+            android:text="Clothes" />
+
+        <Button
+            android:id="@+id/booksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="Books" />
+
+        <Button
+            android:id="@+id/furnitureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="Furniture" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactInput"
+        android:layout_marginTop="105dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/appliancesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="18dp"
+            android:text="Appliances" />
+
+        <Button
+            android:id="@+id/shoesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:text="Shoes" />
+
+        <Button
+            android:id="@+id/kitchenwareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Kitchenware" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactInput"
+        android:layout_marginTop="155dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toiletriesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Toiletries" />
+
+        <Button
+            android:id="@+id/beddingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Bedding" />
+
+        <Button
+            android:id="@+id/stationeryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Stationery" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="175dp"
+        android:text="Others:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/othersInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="165dp"
+        android:hint="Specify other" />
+
+    <!-- Item Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/othersInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Item:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/itemInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/othersInput"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter item name" />
+
+
+    <!-- Image Upload -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Upload Image:" />
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/itemInput"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/itemInput"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="18dp"
+        android:hint="Description" />
+
+    <!-- Container for the "Donate to" text and buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadImage"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <!-- Donate to text -->
+        <TextView
+            android:id="@+id/donateToText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Donate to: "
+            android:textSize="20sp" />
+
+        <!-- Charity Button -->
+        <Button
+            android:id="@+id/charityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Charity" />
+
+        <!-- Everyone Button -->
+        <Button
+            android:id="@+id/everyoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyone" />
+    </LinearLayout>
+
+</RelativeLayout>
